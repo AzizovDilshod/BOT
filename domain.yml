@@ -1,0 +1,97 @@
+
+intents:
+- greet
+- goodbye
+- enquiry
+- collaboration_request
+- thanks
+
+
+
+slots:
+  group:
+    type: text
+
+entities:
+- group
+
+
+actions:
+- utter_greet
+- utter_info
+- utter_accept
+- utter_goodbye
+- utter_thanks
+- utter_default
+
+
+templates:
+  utter_greet:
+  - text: "
+
+Dilshod's BOT: 
+
+ Hey! This is a ML Entusiast bot . What would you like to know about me ? 
+
+ 
+
+ You:"
+
+  utter_info:
+  - text: "
+
+ Dilshod's BOT: 
+
+ Dedicated researcher familiar with Deep Learning and Machine Learning protocols.\n Fluent in popular frameworks like PyTorch, TensorFlow and ScikitLearn.\n Well-coordinated in handling study documentation and records.
+ 1. P1  2. P2 3. P3  4. P4  5. P5 
+
+ Let me know if you're interested. 
+
+ 
+
+  You:"
+
+  utter_accept:
+  - text: "
+
+ Dilshod's BOT: 
+
+ Sure Let's work together ! 
+
+ 
+
+ You:"
+
+  utter_goodbye:
+  - text: "
+
+Dilshod's BOT: 
+
+ Thank you for choosing to transit with us. Waiting for your next visit. 
+
+ 
+
+ You:"
+
+  utter_thanks:
+  - text: "
+
+Dilshod's BOT: 
+
+ my pleasure 
+
+ 
+
+ You:"
+
+  utter_default:
+  - text: "
+
+Dilshod's BOT: 
+
+ I'm sorry, I didn't quite understand that. Could you rephrase? 
+
+ You:"
+
+ 
+ 
